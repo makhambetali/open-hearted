@@ -1,13 +1,9 @@
-import { Heart } from "lucide-react";
-
 export const Letter = () => {
   return (
     <article className="max-w-2xl mx-auto bg-paper paper-texture rounded-sm border border-paper-edge letter-shadow p-8 sm:p-12 md:p-16">
       {/* Decorative header */}
       <header className="text-center mb-10 opacity-0 animate-fade-in-up">
-        <div className="w-16 h-[1px] bg-paper-edge mx-auto mb-6" />
-        <Heart className="w-5 h-5 mx-auto text-seal opacity-60" />
-        <div className="w-16 h-[1px] bg-paper-edge mx-auto mt-6" />
+        <div className="w-24 h-[1px] bg-gradient-to-r from-transparent via-accent-blue to-transparent mx-auto" style={{ background: 'linear-gradient(to right, transparent, hsl(215 55% 40% / 0.4), transparent)' }} />
       </header>
 
       {/* Letter content */}
@@ -31,30 +27,28 @@ export const Letter = () => {
         </p>
 
         <blockquote className="py-6 opacity-0 animate-fade-in-up animation-delay-500">
-          <p className="font-script text-2xl sm:text-3xl text-center text-seal">
+          <p className="font-script text-2xl sm:text-3xl text-center text-accent-blue">
             «Каждый проживает ту жизнь, на которую хватило смелости»
           </p>
         </blockquote>
 
         <p className="opacity-0 animate-fade-in-up animation-delay-600">
-          На днях я спросил у друзей, что для них любовь, и один ответил так: любовь — это когда ты готов сделать для этого человека то, что думал, никогда не сделаешь. И это письмо я пишу с полностью открытой душой и лёгкостью, что для меня, как для человека, который крайне редко ощущает сентиментальность по отношению к себе, является чем-то необычным.
+          На днях я спросил у друзей, что для них значит делать что-то важное, и один ответил так: это когда ты готов сделать для человека то, что думал, никогда не сделаешь. И это письмо я пишу с полностью открытой душой и лёгкостью, что для меня, как для человека, который крайне редко ощущает сентиментальность по отношению к себе, является чем-то необычным.
         </p>
 
         <div className="pt-6 space-y-4 opacity-0 animate-fade-in-up animation-delay-700">
           <p className="text-ink">
-            Если я смог достучаться до твоего сердца, то просто дай знать.
+            Если я смог достучаться до тебя, то просто дай знать.
           </p>
           <p className="text-ink-light">
-            Если же нет, то я буду знать, что я сделал всё возможное со своей стороны, и если даже так остался без ответа, то я приму отказ с достоинством и уважением твоего выбора.
+            Если же нет, то я буду знать, что я сделал всё возможное со своей стороны, и если даже так остался без ответа, то я приму это с достоинством и уважением твоего выбора.
           </p>
         </div>
       </div>
 
-      {/* Signature area */}
-      <footer className="mt-12 pt-8 border-t border-paper-edge opacity-0 animate-fade-in-up animation-delay-800">
-        <div className="text-right">
-          <p className="font-script text-2xl text-ink">С надеждой...</p>
-        </div>
+      {/* Decorative footer */}
+      <footer className="mt-12 pt-8 opacity-0 animate-fade-in-up animation-delay-800">
+        <div className="w-24 h-[1px] mx-auto" style={{ background: 'linear-gradient(to right, transparent, hsl(215 55% 40% / 0.4), transparent)' }} />
       </footer>
     </article>
   );
